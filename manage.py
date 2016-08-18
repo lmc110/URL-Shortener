@@ -1,7 +1,7 @@
 import os, sys, re
 
 # TODO Change this to import from your main application file
-from myurlshortener import app
+from main import app
 
 import subprocess
 from flask_script import Manager

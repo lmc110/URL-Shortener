@@ -4,7 +4,7 @@ import json
 import base64
 import uuid
 
-app = flask.Flask(__name__)
+from init import app
 
 urlDict = {}
 
@@ -42,7 +42,3 @@ def lookup(key):
 @app.errorhandler(404)
 def page_not_found(err):
     return flask.render_template('404.html'), 404
-
-
-if __name__ == '__main__':
-    app.run()
