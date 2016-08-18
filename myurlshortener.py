@@ -30,7 +30,17 @@ def shorten():
 
 @app.route('/<key>')
 def lookup(key):
-    pass
+    for k in urlDict.keys():
+        if k == key:
+            if 'preview' in flask.request.args:
+                return flask.render_template('preview.html', key=key, url=urlDict[key])
+            else:
+                return flask.redirect(urlDict[key], code=301)
+    return flask.abort(code=404)
+
+
+
+
 
 if __name__ == '__main__':
     app.run()
