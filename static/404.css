@@ -1,0 +1,18 @@
+.error-message {
+    font-family: "Open Sans", sans-serif;
+    color: #ff9933;
+    font-weight: 100;
+}
+
+.error-container {
+    margin: 5em auto 5em auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 3.5em;
+    margin-top: 0;
+}

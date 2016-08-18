@@ -1,0 +1,71 @@
+.content
+{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+.pure-button
+{
+    background-color: #00aeef;
+    font-size: 15pt;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: white;
+}
+
+.preview-container {
+    margin: 5em auto 5em auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.info-container {
+    text-align: left;
+    margin-left: 5em;
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+.key, .key-header, .url, .url-header {
+    display: inline-block;
+    font-weight: 100;
+}
+
+.preview-container h1 {
+    color: #ff9933;
+    font-weight: 100;
+    font-size: 2.3em;
+}
+
+.info-container h2 {
+    color: #ff9933;
+}
+
+.info-container .key-header {
+    margin-bottom: 0.3em;
+}
+
+.info-container .url-header {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 35.5em) {
+    .preview-container h1 {
+        font-size: 2.6em;
+    }
+
+    .info-container {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .preview-container h1 {
+        font-size: 3em;
+    }
+
+    .info-container {
+        font-size: 1em;
+    }
+}
