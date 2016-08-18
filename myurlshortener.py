@@ -39,7 +39,9 @@ def lookup(key):
     return flask.abort(code=404)
 
 
-
+@app.errorhandler(404)
+def page_not_found(err):
+    return flask.render_template('404.html'), 404
 
 
 if __name__ == '__main__':
