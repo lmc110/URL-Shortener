@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}Preview{% endblock %}
+{% block css %}<link rel="stylesheet" href="/static/preview.css">{% endblock %}
 {% block content %}
 <div class="preview-container">
-<h1>Shortened URL</h1>
+<h1 class="pure-u-1">Shortened URL</h1>
 <div class="info-container">
     <h2 class="key-header">Your Key:    </h2><em class="key">{{ key }}</em><br>
     <h2 class="url-header">Redirects to:    </h2><em>{{ url }}</em>
 </div>
-<a href="/" class="button">Shorten New URL</a>
+<a href="/" class="pure-button">Shorten New URL</a>
 </div>
 
 {% endblock %}
