@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 {% block title %}URL Shortener{% endblock %}
 {% block content %}
+<div id="container" class="container">
+<h1 class="page-title">Enter your URL below:</h1>
 
+<div id="form-container">
+    <form action="/shorten" method="POST" class="form">
+        <fieldset>
+            <label><input id="url-box" type="url" name="url" required="required" placeholder="Enter URL..."/></label>
+            <input type="submit" value="Shorten!" class="button"/>
+        </fieldset>
+    </form>
+</div>
+</div>
 {% endblock %}
