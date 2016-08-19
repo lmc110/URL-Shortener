@@ -1,4 +1,4 @@
-## gitignore template version 2
+## gitignore template version 3
 ### Python template from PyCharm 'ignore' extension
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -8,9 +8,7 @@ __pycache__/
 /settings.py
 *.zip
 .DS_Store
-
-# .json file
-bookmarks.json
+*.db
 
 # C extensions
 *.so
