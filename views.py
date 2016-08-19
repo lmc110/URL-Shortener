@@ -4,12 +4,9 @@ import json
 import base64
 import uuid
 import models
+
 from models import Bookmark
-
-
 from init import db, app
-
-urlDict = {}
 
 
 @app.route('/')
